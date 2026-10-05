@@ -1,0 +1,54 @@
+{
+  "count": 8,
+  "total": 228,
+  "categories": [
+    "acessórios",
+    "desporto",
+    "equipamento",
+    "t-shirt"
+  ],
+  "top3": [
+    {
+      "id": 1,
+      "name": "Camisola Principal",
+      "category": "t-shirt",
+      "price": 50,
+      "tags": [
+        "adulto",
+        "oficial"
+      ],
+      "details": {
+        "color": "azul",
+        "size": "M"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Camisola alternativa",
+      "category": "t-shirt",
+      "price": 45,
+      "tags": [
+        "adulto",
+        "alternativa"
+      ],
+      "details": {
+        "color": "branco",
+        "size": "L"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Mochila da equipa",
+      "category": "acessórios",
+      "price": 35,
+      "tags": [
+        "viagem",
+        "oficial"
+      ],
+      "details": {
+        "color": "azul",
+        "size": "20 litros"
+      }
+    }
+  ]
+}
