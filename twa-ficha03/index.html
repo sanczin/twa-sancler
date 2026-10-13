@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja de futebol</title>
+  </head>
+  <body>
+    <h1>Loja de futebol</h1>
+
+    <label for="q">Pesquisar produtos:</label>
+    <input id="q" type="search" placeholder="Nome ou tag" />
+
+    <label for="category">Categoria:</label>
+    <select id="category">
+      <option value="">Todas as categorias</option>
+    </select>
+
+    <button id="sort" type="button">Preço: maior para menor</button>
+
+    <p id="status" role="status"></p>
+
+    <ul id="list"></ul>
+
+    <section id="detail" aria-label="Detalhes do produto"></section>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
