@@ -144,10 +144,12 @@ Verificações no browser:
 - Usar o botão de limpar e confirmar que a pesquisa fica vazia.
 - Com Slow 4G nas ferramentas do browser, recarregar para observar o carregamento.
 - Colocar temporariamente `<b>olá</b>` num nome do JSON e confirmar que aparece como texto; repor depois.
-- Para simular HTTP 404, mudar temporariamente o caminho do fetch para `/missing.json?raw` e confirmar o código na rede; repor o caminho e carregar em Tentar novamente.
+- Para simular HTTP 404, mudar temporariamente o caminho do fetch para `https://api.github.com/repos/nodejs/nope`, conforme o enunciado; repor o caminho e carregar em Tentar novamente.
 - Com a extensão Vue DevTools, editar `query` no componente App e observar a lista.
 
 Bónus B: contador de produtos visíveis e botão para limpar a pesquisa.
+
+O README da entrega, incluindo as quatro respostas de reflexão, está em [twa-ficha04/README.md](twa-ficha04/README.md).
 
 ### Uso de IA
 

@@ -72,7 +72,7 @@ load()
           </select>
         </label>
         <button type="button" @click="sortDir = sortDir === 'desc' ? 'asc' : 'desc'">
-          {{ sortDir === 'desc' ? 'Preço: maior para menor' : 'Preço: menor para maior' }}
+          {{ sortDir === 'desc' ? 'Preço: maior para menor ↓' : 'Preço: menor para maior ↑' }}
         </button>
         <button type="button" @click="query = ''">Limpar pesquisa</button>
       </div>
