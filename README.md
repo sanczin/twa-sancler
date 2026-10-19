@@ -101,3 +101,54 @@ Foram verificados:
 ### Uso de IA
 
 Usei o ChatGPT para orientação e preparação da Ficha 03.
+
+## Ficha 04 — Catálogo em Vue
+
+Aplicação Vue com Vite na pasta `twa-ficha04`.
+Reutiliza sem alterações o `src/catalog.js`, o `public/items.json`
+e o `check.js` da Ficha 03.
+
+O `App.vue` tem um `ref` por campo do estado e valores derivados
+com `computed`: produtos visíveis, categorias, produto selecionado e contador.
+A pesquisa e a categoria usam `v-model`; a lista usa `v-for` com
+`:key="item.id"`. O Vue atualiza a página quando o estado muda.
+O carregamento trata erros HTTP e de leitura do JSON, com um botão para tentar novamente.
+Os detalhes incluem nome, preço, tags, cor e tamanho.
+
+### Executar
+
+A partir da pasta principal:
+
+```cmd
+cd twa-ficha04
+npm.cmd install
+npm.cmd run dev
+```
+
+Abrir o endereço local indicado pelo Vite.
+
+### Verificar
+
+Dentro de `twa-ficha04`:
+
+```cmd
+node check.js
+npm.cmd run build
+```
+
+Verificações no browser:
+
+- Pesquisar pelo nome ou pelas tags e confirmar que o input mantém o foco.
+- Combinar pesquisa e categoria, alternar a ordem dos preços e abrir os detalhes.
+- Pesquisar algo inexistente para ver a mensagem sem resultados.
+- Usar o botão de limpar e confirmar que a pesquisa fica vazia.
+- Com Slow 4G nas ferramentas do browser, recarregar para observar o carregamento.
+- Colocar temporariamente `<b>olá</b>` num nome do JSON e confirmar que aparece como texto; repor depois.
+- Para simular HTTP 404, mudar temporariamente o caminho do fetch para `/missing.json?raw` e confirmar o código na rede; repor o caminho e carregar em Tentar novamente.
+- Com a extensão Vue DevTools, editar `query` no componente App e observar a lista.
+
+Bónus B: contador de produtos visíveis e botão para limpar a pesquisa.
+
+### Uso de IA
+
+Usei o ChatGPT para me ajudar nesta ficha.
