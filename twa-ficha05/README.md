@@ -36,6 +36,13 @@ npm run build
 Verifiquei no browser a adição de produtos, a ordenação por preço, a validação do preço 0,
 a limpeza do formulário e da seleção ao pesquisar e a apresentação de HTML como texto.
 
+## Perguntas de reflexão
+
+1. O `selectedId` pertence ao pai e a prop é só de leitura. O `ItemList` emite `select` para o pai decidir a alteração, mantendo um único dono do estado e tornando o filho reutilizável.
+2. Uso `computed` para derivar um valor, como a lista visível, sem efeitos. Uso `watch` para executar um efeito quando um valor muda, como limpar a seleção ao pesquisar.
+3. O `useLoad` evita repetir o estado de carregamento, os erros e a função de carregar nos seis ecrãs; cada chamada tem os seus refs. Se `onMounted` estivesse fora dele, cada componente teria de importar o hook e registar `onMounted(load)`.
+4. O HTML dá validação imediata do browser; o computed aplica regras e controla mensagens e submissão. Ambos podem ser contornados. A validação da API protege os dados, porque verifica os pedidos no servidor.
+
 ## Uso de IA
 
 Usei o ChatGPT para me ajudar nesta ficha.
