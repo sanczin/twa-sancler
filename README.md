@@ -1,9 +1,4 @@
-# Tecnologias Web Avançadas — Ficha 01
-
-## Ficha 05 — Componentes e formulários
-
-Catálogo dividido em componentes, formulário com validação, carregamento com `useLoad` e seleção limpa ao pesquisar.
-Instruções e declaração de IA em [twa-ficha05/README.md](twa-ficha05/README.md).
+# Tecnologias Web Avançadas
 
 ## twa-ficha01
 Primeiro módulo JavaScript e consulta à API do GitHub.
@@ -155,6 +150,26 @@ Verificações no browser:
 Bónus B: contador de produtos visíveis e botão para limpar a pesquisa.
 
 O README da entrega, incluindo as quatro respostas de reflexão, está em [twa-ficha04/README.md](twa-ficha04/README.md).
+
+### Uso de IA
+
+Usei o ChatGPT para me ajudar nesta ficha.
+
+## Ficha 05 — Componentes e formulários
+
+Continuação do catálogo da Ficha 04, na pasta `twa-ficha05`.
+A lista, o detalhe e o formulário estão separados em componentes.
+Permite adicionar produtos com validação, mantendo a pesquisa e a ordenação.
+
+A partir da pasta principal do repositório:
+
+```cmd
+cd twa-ficha05
+npm install
+npm run dev
+```
+
+Mais informações em [twa-ficha05/README.md](twa-ficha05/README.md).
 
 ### Uso de IA
 
