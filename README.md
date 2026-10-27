@@ -1,5 +1,10 @@
 # Tecnologias Web Avançadas — Ficha 01
 
+## Ficha 05 — Componentes e formulários
+
+Catálogo dividido em componentes, formulário com validação, carregamento com `useLoad` e seleção limpa ao pesquisar.
+Instruções e declaração de IA em [twa-ficha05/README.md](twa-ficha05/README.md).
+
 ## twa-ficha01
 Primeiro módulo JavaScript e consulta à API do GitHub.
 Os dados obtidos são guardados em repo.json.
