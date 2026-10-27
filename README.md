@@ -1,5 +1,8 @@
 # Tecnologias Web Avançadas
 
+Repositório das fichas individuais da unidade curricular de Tecnologias Web Avançadas.
+Cada ficha está organizada na sua pasta, com os respetivos ficheiros e instruções.
+
 ## twa-ficha01
 Primeiro módulo JavaScript e consulta à API do GitHub.
 Os dados obtidos são guardados em repo.json.
