@@ -177,3 +177,15 @@ Mais informações em [twa-ficha05/README.md](twa-ficha05/README.md).
 ### Uso de IA
 
 Usei o ChatGPT para me ajudar nesta ficha.
+
+## Ficha 06 — Rotas e paginação
+
+Continuação da Ficha 05, na pasta `twa-ficha06`, com Vue Router, estado partilhado e paginação da PokéAPI pelo URL.
+
+```cmd
+cd twa-ficha06
+npm install
+npm run dev
+```
+
+Instruções, verificações, respostas de reflexão e declaração de IA em [twa-ficha06/README.md](twa-ficha06/README.md).
