@@ -9,10 +9,10 @@ app.use((req, res, next) => {
 app.use(express.json())
 app.get('/api/health', (req, res) => res.json({ ok: true, time: new Date() }))
 app.use('/api/items', itemsRouter)
-app.use((req, res) => res.status(404).json({ error: 'Caminho n�o encontrado' }))
+app.use((req, res) => res.status(404).json({ error: 'Caminho não encontrado' }))
 app.use((err, req, res, next) => {
   if (err.type === 'entity.parse.failed') {
-    return res.status(400).json({ error: 'JSON inv�lido' })
+    return res.status(400).json({ error: 'JSON inválido' })
   }
   console.error(err)
   res.status(500).json({ error: 'Erro interno do servidor' })
