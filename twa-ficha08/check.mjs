@@ -1,4 +1,4 @@
-// Verifica��es pr�prias: executar com o servidor ligado. Sil�ncio = sucesso.
+// Verificações próprias: executar com o servidor ligado. Silêncio = sucesso.
 import assert from 'node:assert/strict'
 import { search } from './src/catalog.js'
 const base = 'http://localhost:3000'
@@ -16,7 +16,7 @@ async function pedido(caminho, estado, method = 'GET', corpo) {
 assert.equal((await pedido('/api/health', 200)).ok, true)
 const items = await pedido('/api/items', 200)
 assert.ok(items.length >= 8)
-// O cat�logo pessoal � de futebol; n�o cont�m os puzzles do exemplo do docente.
+// O catálogo pessoal é de futebol; não contém os puzzles do exemplo do docente.
 for (const q of ['puzzle', 'OFICIAL', 'Camisola', 'inexistente-xyz']) {
   assert.deepEqual(await pedido(`/api/items?q=${q}`, 200), search(items, q))
 }
