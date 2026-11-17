@@ -16,7 +16,7 @@
   {
     "id": 2,
     "name": "Cachecol da equipa",
-    "category": "acess�rios",
+    "category": "acessórios",
     "price": 15,
     "tags": [
       "inverno",
@@ -24,12 +24,12 @@
     ],
     "details": {
       "color": "azul",
-      "size": "�nico"
+      "size": "único"
     }
   },
   {
     "id": 3,
-    "name": "Cal��es da equipa",
+    "name": "Calções da equipa",
     "category": "equipamento",
     "price": 25,
     "tags": [
@@ -57,16 +57,16 @@
   },
   {
     "id": 5,
-    "name": "Bon� da equipa",
-    "category": "acess�rios",
+    "name": "Boné da equipa",
+    "category": "acessórios",
     "price": 18,
     "tags": [
-      "ver�o",
-      "ajust�vel"
+      "verão",
+      "ajustável"
     ],
     "details": {
       "color": "azul",
-      "size": "�nico"
+      "size": "único"
     }
   },
   {
@@ -86,7 +86,7 @@
   {
     "id": 7,
     "name": "Mochila da equipa",
-    "category": "acess�rios",
+    "category": "acessórios",
     "price": 35,
     "tags": [
       "viagem",
