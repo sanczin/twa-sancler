@@ -1,0 +1,8 @@
+{
+  "name": "twa-ficha08",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "dev": "node --watch src/app.js", "start": "node src/app.js", "test": "node check.mjs" },
+  "dependencies": { "express": "^5.1.0" }
+}
