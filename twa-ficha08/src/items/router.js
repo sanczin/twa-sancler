@@ -12,7 +12,7 @@ function validar(corpo) {
     errors.name = 'O nome deve ter pelo menos 3 caracteres'
   }
   if (typeof corpo?.price !== 'number' || !Number.isFinite(corpo.price) || corpo.price <= 0) {
-    errors.price = 'O pre�o deve ser um n�mero maior do que zero'
+    errors.price = 'O preço deve ser um número maior do que zero'
   }
   if (corpo?.tags !== undefined && (!Array.isArray(corpo.tags) || corpo.tags.some(tag => typeof tag !== 'string'))) {
     errors.tags = 'As tags devem ser uma lista de textos'
@@ -26,7 +26,7 @@ router.get('/', (req, res) => {
 })
 router.get('/:id', (req, res) => {
   const item = items.find(item => item.id === Number(req.params.id))
-  if (!item) return res.status(404).json({ error: 'Item n�o encontrado' })
+  if (!item) return res.status(404).json({ error: 'Item não encontrado' })
   res.json(item)
 })
 router.post('/', (req, res) => {
@@ -38,16 +38,16 @@ router.post('/', (req, res) => {
 })
 router.put('/:id', (req, res) => {
   const indice = items.findIndex(item => item.id === Number(req.params.id))
-  if (indice === -1) return res.status(404).json({ error: 'Item n�o encontrado' })
+  if (indice === -1) return res.status(404).json({ error: 'Item não encontrado' })
   const errors = validar(req.body)
   if (Object.keys(errors).length) return res.status(400).json({ errors })
-  // PUT substitui os dados; o ID continua a ser o do endere�o.
+  // PUT substitui os dados; o ID continua a ser o do endereço.
   items[indice] = { tags: [], ...req.body, id: items[indice].id, name: req.body.name.trim() }
   res.json(items[indice])
 })
 router.delete('/:id', (req, res) => {
   const indice = items.findIndex(item => item.id === Number(req.params.id))
-  if (indice === -1) return res.status(404).json({ error: 'Item n�o encontrado' })
+  if (indice === -1) return res.status(404).json({ error: 'Item não encontrado' })
   items.splice(indice, 1)
   res.status(204).end()
 })
